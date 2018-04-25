@@ -13,6 +13,7 @@ public class Runner {
     public static void main(String[] args) {
 
 
+
         ConfigReader configReader = new ConfigReader();
         int floorsNumber = configReader.getFLOORS_NUMBER();
         int elevatorCapacity = configReader.getELEVATOR_CAPACITY();
