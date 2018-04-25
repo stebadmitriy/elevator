@@ -21,6 +21,7 @@ public class ElevatorControllerTest {
         Elevator elevatorMock = mock(Elevator.class);
         Passenger passenger = new Passenger(0, 1, 5);
         when(elevatorMock.getCurrentFloor()).thenReturn(5);
+//        verify(elevatorMock, times(1)).getCurrentFloor();
 
         int currentFloor = elevatorMock.getCurrentFloor();
         assertEquals(currentFloor, passenger.getDestinationFloor());
